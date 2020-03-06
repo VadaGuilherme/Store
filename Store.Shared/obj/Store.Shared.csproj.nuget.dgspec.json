@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj": {}
+    "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj": {}
   },
   "projects": {
-    "C:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj": {
+    "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj",
+        "projectUniqueName": "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj",
         "projectName": "Store.Shared",
-        "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj",
-        "packagesPath": "C:\\Users\\Guilherme.Vada\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos\\pessoal\\Store\\Store.Shared\\obj\\",
+        "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj",
+        "packagesPath": "C:\\Users\\gvada\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Guilherme.Vada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gvada\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
