@@ -1,27 +1,27 @@
+using System.Collections.Generic;
+using Store.Domain.StoreContext.ValueObjects;
+
 namespace Store.Domain.StoreContext.Entities
 {
     public class Customer
     {
-        public Customer(string firstName, string lastName,  string document, string email, string phone, string address)
+        public Customer(Name name, Document document, Email email, string phone)
         {
-            FirstName = firstName;
-            LastName = lastName;
-            document = Document;
-            email = Email;
-            phone = Phone;
-            address = Address;
+            Document = document;
+            Email = email;
+            Phone = phone;
+            Addresses = new List<Address>();
         }
 
-        public string FirstName { get; private set; }
-        public string LastName { get; private set; }
-        public string Document { get; private set; }
-        public string Email { get; private set; }
+        public Name Name { get; private set; }
+        public Document Document { get; private set; }
+        public Email Email { get; private set; }
         public string Phone { get; private set; }
-        public string Address { get; private set; }
+        public IReadOnlyCollection<Address> Addresses { get; private set; }
 
         public override string ToString()
         {
-            return $"{FirstName} {LastName}";
+            return Name.ToString();
         }
     }
 }
