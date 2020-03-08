@@ -8,6 +8,18 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "FluentValidator/2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/16.2.0": {
         "type": "package",
         "compile": {
@@ -2029,6 +2041,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "Store.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FluentValidator": "2.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Store.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Store.Domain.dll": {}
+        }
       }
     }
   },
@@ -2058,6 +2083,18 @@
         "build/netstandard1.0/coverlet.core.pdb",
         "coverlet.collector.1.0.1.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "FluentValidator/2.0.2": {
+      "sha512": "+jPy82KgA80/SjmesLUCQsBB+GWbffGYMeGUMizLWc87hQkBPnyrysfoa/Hiq0QciGEeFD1PokPwLafnNDnQ/Q==",
+      "type": "package",
+      "path": "fluentvalidator/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidator.2.0.2.nupkg.sha512",
+        "fluentvalidator.nuspec",
+        "lib/netstandard1.3/FluentValidator.dll"
       ]
     },
     "Microsoft.CodeCoverage/16.2.0": {
@@ -6862,6 +6899,11 @@
         "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "Store.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Store.Domain/Store.Domain.csproj",
+      "msbuildProject": "../Store.Domain/Store.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6869,6 +6911,7 @@
       "MSTest.TestAdapter >= 1.4.0",
       "MSTest.TestFramework >= 1.4.0",
       "Microsoft.NET.Test.Sdk >= 16.2.0",
+      "Store.Domain >= 1.0.0",
       "coverlet.collector >= 1.0.1"
     ]
   },
@@ -6897,7 +6940,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj": {
+              "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
