@@ -7,11 +7,7 @@ namespace Store.Domain.StoreContext.ValueObjects
     {
         public Document(string number)
         {
-            Number = number;
-
-            AddNotifications(new ValidationContract()
-                .IsTrue(Validate(number), "Document", "CPF inválido")
-            );
+            Number = number;    
         }
 
         public string Number { get; private set; }
