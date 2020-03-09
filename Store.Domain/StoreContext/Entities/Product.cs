@@ -21,5 +21,10 @@ namespace Store.Domain.StoreContext.Entities
         {
             return $"{Title}";
         }
+
+        public void DecreaseQuantity(decimal quantity)
+        {
+            QuantityOnHand -= quantity;
+        }
     }
 }
