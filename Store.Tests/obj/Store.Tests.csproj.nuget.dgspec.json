@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj": {}
+    "C:\\Users\\gvada\\projetos\\Store\\Store.Tests\\Store.Tests.csproj": {}
   },
   "projects": {
-    "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj": {
+    "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj",
         "projectName": "Store.Domain",
-        "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj",
-        "packagesPath": "C:\\Users\\Guilherme.Vada\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos\\pessoal\\Store\\Store.Domain\\obj\\",
+        "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj",
+        "packagesPath": "C:\\Users\\gvada\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Guilherme.Vada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gvada\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,21 +59,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj": {
+    "C:\\Users\\gvada\\projetos\\Store\\Store.Tests\\Store.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\gvada\\projetos\\Store\\Store.Tests\\Store.Tests.csproj",
         "projectName": "Store.Tests",
-        "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj",
-        "packagesPath": "C:\\Users\\Guilherme.Vada\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos\\pessoal\\Store\\Store.Tests\\obj\\",
+        "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Tests\\Store.Tests.csproj",
+        "packagesPath": "C:\\Users\\gvada\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Guilherme.Vada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gvada\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,8 +86,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj": {
-                "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj"
+              "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj": {
+                "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj"
               }
             }
           }
@@ -128,12 +128,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
