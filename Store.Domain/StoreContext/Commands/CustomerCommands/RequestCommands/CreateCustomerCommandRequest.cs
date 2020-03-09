@@ -4,7 +4,7 @@ using Store.Shared.Commands;
 
 namespace Store.Domain.StoreContext.Commands.CustomerCommands.RequestCommands
 {
-    public class CreateCustomerCommand : Notifiable, ICommand
+    public class CreateCustomerCommandRequest : Notifiable, ICommand
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

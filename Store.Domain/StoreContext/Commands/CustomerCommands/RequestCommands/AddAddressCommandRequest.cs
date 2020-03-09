@@ -3,7 +3,7 @@ using Store.Domain.StoreContext.Enums;
 
 namespace Store.Domain.StoreContext.Commands.CustomerCommands.RequestCommands
 {
-    public class AddAddressCommand
+    public class AddAddressCommandRequest
     {
         public Guid Id { get; set; }
         public string Street { get; set; }
