@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projetos\\pessoal\\Store\\Store.Api\\Store.Api.csproj": {}
+    "c:\\projetos\\pessoal\\Store\\Store.Api\\Store.Api.csproj": {}
   },
   "projects": {
-    "C:\\projetos\\pessoal\\Store\\Store.Api\\Store.Api.csproj": {
+    "c:\\projetos\\pessoal\\Store\\Store.Api\\Store.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos\\pessoal\\Store\\Store.Api\\Store.Api.csproj",
+        "projectUniqueName": "c:\\projetos\\pessoal\\Store\\Store.Api\\Store.Api.csproj",
         "projectName": "Store.Api",
-        "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Api\\Store.Api.csproj",
+        "projectPath": "c:\\projetos\\pessoal\\Store\\Store.Api\\Store.Api.csproj",
         "packagesPath": "C:\\Users\\Guilherme.Vada\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos\\pessoal\\Store\\Store.Api\\obj\\",
+        "outputPath": "c:\\projetos\\pessoal\\Store\\Store.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Guilherme.Vada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,12 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
