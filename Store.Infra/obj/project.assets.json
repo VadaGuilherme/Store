@@ -14,6 +14,18 @@
           "lib/netstandard2.0/Dapper.dll": {}
         }
       },
+      "FluentValidator/2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -250,6 +262,33 @@
             "rid": "win"
           }
         }
+      },
+      "Store.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FluentValidator": "2.0.2",
+          "Store.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Store.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Store.Domain.dll": {}
+        }
+      },
+      "Store.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FluentValidator": "2.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Store.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Store.Shared.dll": {}
+        }
       }
     }
   },
@@ -267,6 +306,18 @@
         "lib/net461/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
         "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
+    "FluentValidator/2.0.2": {
+      "sha512": "+jPy82KgA80/SjmesLUCQsBB+GWbffGYMeGUMizLWc87hQkBPnyrysfoa/Hiq0QciGEeFD1PokPwLafnNDnQ/Q==",
+      "type": "package",
+      "path": "fluentvalidator/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidator.2.0.2.nupkg.sha512",
+        "fluentvalidator.nuspec",
+        "lib/netstandard1.3/FluentValidator.dll"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
@@ -1007,12 +1058,24 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Store.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Store.Domain/Store.Domain.csproj",
+      "msbuildProject": "../Store.Domain/Store.Domain.csproj"
+    },
+    "Store.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Store.Shared/Store.Shared.csproj",
+      "msbuildProject": "../Store.Shared/Store.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Dapper >= 2.0.30",
       "NETStandard.Library >= 2.0.3",
+      "Store.Domain >= 1.0.0",
+      "Store.Shared >= 1.0.0",
       "System.Data.SqlClient >= 4.8.1"
     ]
   },
@@ -1022,11 +1085,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj",
+      "projectUniqueName": "C:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj",
       "projectName": "Store.Infra",
-      "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj",
+      "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj",
       "packagesPath": "C:\\Users\\gvada\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Infra\\obj\\",
+      "outputPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gvada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1041,7 +1104,14 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj": {
+              "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj"
+            },
+            "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj": {
+              "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
