@@ -229,11 +229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj",
+      "projectUniqueName": "c:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj",
       "projectName": "Store.Domain",
-      "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj",
+      "projectPath": "c:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj",
       "packagesPath": "C:\\Users\\Guilherme.Vada\\.nuget\\packages\\",
-      "outputPath": "C:\\projetos\\pessoal\\Store\\Store.Domain\\obj\\",
+      "outputPath": "c:\\projetos\\pessoal\\Store\\Store.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Guilherme.Vada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -249,8 +249,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj": {
-              "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj"
+            "c:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj": {
+              "projectPath": "c:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj"
             }
           }
         }

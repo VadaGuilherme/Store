@@ -1085,11 +1085,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projetos\\pessoal\\Store\\Store.Infra\\Store.Infra.csproj",
+      "projectUniqueName": "c:\\projetos\\pessoal\\Store\\Store.Infra\\Store.Infra.csproj",
       "projectName": "Store.Infra",
-      "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Infra\\Store.Infra.csproj",
+      "projectPath": "c:\\projetos\\pessoal\\Store\\Store.Infra\\Store.Infra.csproj",
       "packagesPath": "C:\\Users\\Guilherme.Vada\\.nuget\\packages\\",
-      "outputPath": "C:\\projetos\\pessoal\\Store\\Store.Infra\\obj\\",
+      "outputPath": "c:\\projetos\\pessoal\\Store\\Store.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Guilherme.Vada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1105,11 +1105,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj": {
-              "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj"
+            "c:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj": {
+              "projectPath": "c:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj"
             },
-            "C:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj": {
-              "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj"
+            "c:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj": {
+              "projectPath": "c:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj"
             }
           }
         }

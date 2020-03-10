@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj": {}
+    "c:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj": {}
   },
   "projects": {
-    "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj": {
+    "c:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj",
+        "projectUniqueName": "c:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj",
         "projectName": "Store.Domain",
-        "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj",
+        "projectPath": "c:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj",
         "packagesPath": "C:\\Users\\Guilherme.Vada\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos\\pessoal\\Store\\Store.Domain\\obj\\",
+        "outputPath": "c:\\projetos\\pessoal\\Store\\Store.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Guilherme.Vada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj": {
-                "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj"
+              "c:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj": {
+                "projectPath": "c:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj"
               }
             }
           }
@@ -67,14 +67,14 @@
         }
       }
     },
-    "C:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj": {
+    "c:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj",
+        "projectUniqueName": "c:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj",
         "projectName": "Store.Shared",
-        "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj",
+        "projectPath": "c:\\projetos\\pessoal\\Store\\Store.Shared\\Store.Shared.csproj",
         "packagesPath": "C:\\Users\\Guilherme.Vada\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos\\pessoal\\Store\\Store.Shared\\obj\\",
+        "outputPath": "c:\\projetos\\pessoal\\Store\\Store.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Guilherme.Vada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -126,14 +126,14 @@
         }
       }
     },
-    "C:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj": {
+    "c:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj",
+        "projectUniqueName": "c:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj",
         "projectName": "Store.Tests",
-        "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj",
+        "projectPath": "c:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj",
         "packagesPath": "C:\\Users\\Guilherme.Vada\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos\\pessoal\\Store\\Store.Tests\\obj\\",
+        "outputPath": "c:\\projetos\\pessoal\\Store\\Store.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Guilherme.Vada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -149,8 +149,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj": {
-                "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj"
+              "c:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj": {
+                "projectPath": "c:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj"
               }
             }
           }

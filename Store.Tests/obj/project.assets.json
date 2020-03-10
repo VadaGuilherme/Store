@@ -6940,11 +6940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj",
+      "projectUniqueName": "c:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj",
       "projectName": "Store.Tests",
-      "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj",
+      "projectPath": "c:\\projetos\\pessoal\\Store\\Store.Tests\\Store.Tests.csproj",
       "packagesPath": "C:\\Users\\Guilherme.Vada\\.nuget\\packages\\",
-      "outputPath": "C:\\projetos\\pessoal\\Store\\Store.Tests\\obj\\",
+      "outputPath": "c:\\projetos\\pessoal\\Store\\Store.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Guilherme.Vada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6960,8 +6960,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj": {
-              "projectPath": "C:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj"
+            "c:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj": {
+              "projectPath": "c:\\projetos\\pessoal\\Store\\Store.Domain\\Store.Domain.csproj"
             }
           }
         }
