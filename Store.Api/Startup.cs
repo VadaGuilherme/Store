@@ -10,6 +10,7 @@ namespace Store.Api
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -20,6 +21,8 @@ namespace Store.Api
             }
 
             app.UseRouting();
+
+            app.UseMvc();
         }
     }
 }
