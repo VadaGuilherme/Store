@@ -9,7 +9,7 @@ namespace Store.Tests.Commands
         [TestMethod]
         public void ShouldValidateWhenCommandIsValid()
         {
-            var command = new CreateCustomerCommand();
+            var command = new CreateCustomerCommandRequest();
 
             command.FirstName = "Guilherme";
             command.LastName = "Vada";
