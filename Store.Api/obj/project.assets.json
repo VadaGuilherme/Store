@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.0": {
+      "FluentValidator/2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/FluentValidator.dll": {}
+        }
+      },
       "Microsoft.AspNetCore/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -869,10 +881,49 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "Store.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FluentValidator": "2.0.2",
+          "Store.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Store.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Store.Domain.dll": {}
+        }
+      },
+      "Store.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FluentValidator": "2.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Store.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Store.Shared.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "FluentValidator/2.0.2": {
+      "sha512": "+jPy82KgA80/SjmesLUCQsBB+GWbffGYMeGUMizLWc87hQkBPnyrysfoa/Hiq0QciGEeFD1PokPwLafnNDnQ/Q==",
+      "type": "package",
+      "path": "fluentvalidator/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidator.2.0.2.nupkg.sha512",
+        "fluentvalidator.nuspec",
+        "lib/netstandard1.3/FluentValidator.dll"
+      ]
+    },
     "Microsoft.AspNetCore/2.2.0": {
       "sha512": "Bs75iht4lXS8uVWy/Cbsr9i0m2jRtnrfPEWU+6t0dQTZcJEfF9b7G2F7XvstLFWkAKSgYRzFkAwi/KypY0Qtew==",
       "type": "package",
@@ -2034,27 +2085,39 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Store.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Store.Domain/Store.Domain.csproj",
+      "msbuildProject": "../Store.Domain/Store.Domain.csproj"
+    },
+    "Store.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Store.Shared/Store.Shared.csproj",
+      "msbuildProject": "../Store.Shared/Store.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
-      "Microsoft.AspNetCore >= 2.2.0"
+      "Microsoft.AspNetCore >= 2.2.0",
+      "Store.Domain >= 1.0.0",
+      "Store.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Guilherme.Vada\\.nuget\\packages\\": {}
+    "C:\\Users\\gvada\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\projetos\\pessoal\\Store\\Store.Api\\Store.Api.csproj",
+      "projectUniqueName": "C:\\Users\\gvada\\projetos\\Store\\Store.Api\\Store.Api.csproj",
       "projectName": "Store.Api",
-      "projectPath": "c:\\projetos\\pessoal\\Store\\Store.Api\\Store.Api.csproj",
-      "packagesPath": "C:\\Users\\Guilherme.Vada\\.nuget\\packages\\",
-      "outputPath": "c:\\projetos\\pessoal\\Store\\Store.Api\\obj\\",
+      "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Api\\Store.Api.csproj",
+      "packagesPath": "C:\\Users\\gvada\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Guilherme.Vada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gvada\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2066,7 +2129,14 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj": {
+              "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj"
+            },
+            "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj": {
+              "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2093,6 +2163,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.1, 3.0.1]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.0.3, 3.0.3]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -2101,7 +2189,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
