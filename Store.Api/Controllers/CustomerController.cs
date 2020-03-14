@@ -6,6 +6,7 @@ using Store.Domain.StoreContext.Commands.CustomerCommands.ResponseCommands;
 using Store.Domain.StoreContext.Handlers;
 using Store.Domain.StoreContext.Queries;
 using Store.Domain.StoreContext.Repositories;
+using Store.Shared.Commands;
 
 namespace Store.Api.Controllers
 {
@@ -43,10 +44,9 @@ namespace Store.Api.Controllers
 
         [HttpPost]
         [Route("v1/customers")]
-        public CreateCustomerCommandResponse Post([FromBody]CreateCustomerCommandRequest command)
+        public ICommandResult Post([FromBody]CreateCustomerCommandRequest command)
         {
-            var result = (CreateCustomerCommandResponse)_handler.Handle(command);
-            
+            var result = (CreateCustomerCommandResponse)_handler.Handle(command);            
             return result;
         }
     }

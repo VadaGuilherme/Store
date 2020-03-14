@@ -41,13 +41,17 @@ namespace Store.Domain.StoreContext.Handlers
             AddNotifications(customer.Notifications);
 
             if(Invalid)
-                return null;
+                return new CommandResponse(false, "Por favor, corrija os campos abaixo", Notifications);
 
             _repository.Save(customer);
 
             _emailService.Send(email.Address, "gvadaguariba@gmail.com", "Bem vindo", "Seja bem vindo");
 
-            return new CreateCustomerCommandResponse(customer.Id, name.ToString(), email.Address);
+            return new CommandResponse(true, "Bem vindo ao Store", new {
+                Id = customer.Id,
+                Name = name.ToString(),
+                Email = email.Address
+            });
         }
 
         public ICommandResult Handle(AddAddressCommandRequest command)
