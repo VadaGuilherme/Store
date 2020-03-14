@@ -261,6 +261,20 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.HttpOverrides.dll": {}
         }
       },
+      "Microsoft.AspNetCore.ResponseCompression/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Options": "2.2.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.1/Microsoft.AspNetCore.ResponseCompression.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Microsoft.AspNetCore.ResponseCompression.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Routing/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2377,6 +2391,23 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.HttpOverrides.xml",
         "microsoft.aspnetcore.httpoverrides.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.httpoverrides.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.ResponseCompression/2.2.0": {
+      "sha512": "RvSstOhebIMDdRLd4iWjA6z2o2kGGwEYGPajvTXwndOA3TZpWH3FOIV4L7mehN/HoKrbTbX5vZ54ZFDwWoAFKA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.responsecompression/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Microsoft.AspNetCore.ResponseCompression.dll",
+        "lib/net461/Microsoft.AspNetCore.ResponseCompression.xml",
+        "lib/netcoreapp2.1/Microsoft.AspNetCore.ResponseCompression.dll",
+        "lib/netcoreapp2.1/Microsoft.AspNetCore.ResponseCompression.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.ResponseCompression.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.ResponseCompression.xml",
+        "microsoft.aspnetcore.responsecompression.2.2.0.nupkg.sha512",
+        "microsoft.aspnetcore.responsecompression.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Routing/2.2.0": {
@@ -6845,6 +6876,7 @@
     ".NETCoreApp,Version=v3.0": [
       "FluentValidator >= 2.0.2",
       "Microsoft.AspNetCore >= 2.2.0",
+      "Microsoft.AspNetCore.ResponseCompression >= 2.2.0",
       "Store.Domain >= 1.0.0",
       "Store.Infra >= 1.0.0",
       "Store.Shared >= 1.0.0"
@@ -6856,11 +6888,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gvada\\projetos\\Store\\Store.Api\\Store.Api.csproj",
+      "projectUniqueName": "c:\\Users\\gvada\\projetos\\Store\\Store.Api\\Store.Api.csproj",
       "projectName": "Store.Api",
-      "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Api\\Store.Api.csproj",
+      "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Api\\Store.Api.csproj",
       "packagesPath": "C:\\Users\\gvada\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Api\\obj\\",
+      "outputPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gvada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6876,14 +6908,14 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj": {
-              "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj"
+            "c:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj": {
+              "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj"
             },
-            "C:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj": {
-              "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj"
+            "c:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj": {
+              "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj"
             },
-            "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj": {
-              "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj"
+            "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj": {
+              "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj"
             }
           }
         }
@@ -6902,6 +6934,10 @@
             "version": "[2.0.2, )"
           },
           "Microsoft.AspNetCore": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "Microsoft.AspNetCore.ResponseCompression": {
             "target": "Package",
             "version": "[2.2.0, )"
           }
