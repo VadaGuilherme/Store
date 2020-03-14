@@ -2,7 +2,7 @@ using System;
 
 namespace Store.Domain.StoreContext.Queries
 {
-    public class ListCustomerResult
+    public class ListCustomerQueryResult
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
