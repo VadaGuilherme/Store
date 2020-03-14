@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Store.Domain.StoreContext.Commands.CustomerCommands.RequestCommands;
 using Store.Domain.StoreContext.Commands.CustomerCommands.ResponseCommands;
-using Store.Domain.StoreContext.Entities;
 using Store.Domain.StoreContext.Handlers;
 using Store.Domain.StoreContext.Queries;
 using Store.Domain.StoreContext.Repositories;
-using Store.Shared.Commands;
 
 namespace Store.Api.Controllers
 {
@@ -23,6 +21,7 @@ namespace Store.Api.Controllers
 
         [HttpGet]
         [Route("v1/customers")]
+        [ResponseCache(Location = ResponseCacheLocation.Client, Duration = 60)]
         public IEnumerable<ListCustomerQueryResult> Get()
         {
             return _customerRepository.Get();
