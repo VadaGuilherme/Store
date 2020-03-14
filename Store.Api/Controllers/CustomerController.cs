@@ -1,18 +1,24 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using Store.Domain.StoreContext.Commands.CustomerCommands.RequestCommands;
+using Store.Domain.StoreContext.Commands.CustomerCommands.ResponseCommands;
 using Store.Domain.StoreContext.Entities;
+using Store.Domain.StoreContext.Handlers;
 using Store.Domain.StoreContext.Queries;
 using Store.Domain.StoreContext.Repositories;
+using Store.Shared.Commands;
 
 namespace Store.Api.Controllers
 {
     public class CustomerController : Controller
     {
         private readonly ICustomerRepository _customerRepository;
-        public CustomerController(ICustomerRepository customerRepository)
+        private readonly CustomerHandler _handler;
+        public CustomerController(ICustomerRepository customerRepository, CustomerHandler customerHandler)
         {
             _customerRepository = customerRepository;
+            _handler = customerHandler;
         }
 
         [HttpGet]
@@ -38,23 +44,11 @@ namespace Store.Api.Controllers
 
         [HttpPost]
         [Route("customers")]
-        public Customer Post([FromBody]Customer customer)
+        public CreateCustomerCommandResponse Post([FromBody]CreateCustomerCommandRequest command)
         {
-            return null;
-        }
-
-        [HttpPut]
-        [Route("customers/{id}")]
-        public Customer Put([FromBody]Customer customer)
-        {
-            return null;
-        }
-
-        [HttpDelete]
-        [Route("customers/{id}")]
-        public Customer Delete()
-        {
-            return null;
+            var result = (CreateCustomerCommandResponse)_handler.Handle(command);
+            
+            return result;
         }
     }
 }
