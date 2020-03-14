@@ -22,28 +22,28 @@ namespace Store.Api.Controllers
         }
 
         [HttpGet]
-        [Route("customers")]
+        [Route("v1/customers")]
         public IEnumerable<ListCustomerQueryResult> Get()
         {
             return _customerRepository.Get();
         }
 
         [HttpGet]
-        [Route("customers/{id}")]
+        [Route("v1/customers/{id}")]
         public GetCustomerQueryResult GetById(Guid id)
         {
             return _customerRepository.Get(id);
         }
 
         [HttpGet]
-        [Route("customers/{id}/orders")]
+        [Route("v1/customers/{id}/orders")]
         public IEnumerable<ListCustomerOrdersQueryResult> GetOrders(Guid id)
         {
             return _customerRepository.GetOrders(id);
         }
 
         [HttpPost]
-        [Route("customers")]
+        [Route("v1/customers")]
         public CreateCustomerCommandResponse Post([FromBody]CreateCustomerCommandRequest command)
         {
             var result = (CreateCustomerCommandResponse)_handler.Handle(command);
