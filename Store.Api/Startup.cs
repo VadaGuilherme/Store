@@ -15,6 +15,7 @@ using Store.Domain.StoreContext.Services;
 using Store.Infra.StoreContext.DataContexts;
 using Store.Infra.StoreContext.Repositories;
 using Store.Infra.StoreContext.Services;
+using Store.Shared;
 
 namespace Store.Api
 {
@@ -28,6 +29,8 @@ namespace Store.Api
                 .AddJsonFile("appsettings.json");
 
             Configuration = builder.Build();
+
+            services.AddApplicationInsightsTelemetry(Configuration);
 
             services.AddMvc();
 
@@ -50,6 +53,11 @@ namespace Store.Api
                 o.ApiKey = "ed497fc444eb422fb374e481d05264c4";
                 o.LogId = new Guid("a91e9f2a-f4e4-474f-8438-14501b71b6eb");
             });
+
+            //TODO: Configurar ConnectionString
+            Settings.ConnectionString = "";
+
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

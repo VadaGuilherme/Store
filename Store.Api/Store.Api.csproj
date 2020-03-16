@@ -9,6 +9,7 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.1.0"/>
     <PackageReference Include="Elmah.Io.AspNetCore" Version="3.8.101"/>
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.2"/>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.14.0-beta3"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Store.Domain\Store.Domain.csproj"/>
