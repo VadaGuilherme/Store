@@ -1,8 +1,11 @@
+using System.ComponentModel;
+using System.IO;
 using System;
 using Elmah.Io;
 using Elmah.Io.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
@@ -17,8 +20,15 @@ namespace Store.Api
 {
     public class Startup
     {
+        public static IConfiguration Configuration { get; set; }
         public void ConfigureServices(IServiceCollection services)
         {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json");
+
+            Configuration = builder.Build();
+
             services.AddMvc();
 
             services.AddResponseCompression();

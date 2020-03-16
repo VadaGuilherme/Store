@@ -8,6 +8,7 @@
     <PackageReference Include="Microsoft.AspNetCore.ResponseCompression" Version="2.2.0"/>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.1.0"/>
     <PackageReference Include="Elmah.Io.AspNetCore" Version="3.8.101"/>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.2"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Store.Domain\Store.Domain.csproj"/>

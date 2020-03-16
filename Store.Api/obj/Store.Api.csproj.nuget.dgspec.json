@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\gvada\\projetos\\Store\\Store.Api\\Store.Api.csproj": {}
+    "C:\\Users\\gvada\\projetos\\Store\\Store.Api\\Store.Api.csproj": {}
   },
   "projects": {
-    "c:\\Users\\gvada\\projetos\\Store\\Store.Api\\Store.Api.csproj": {
+    "C:\\Users\\gvada\\projetos\\Store\\Store.Api\\Store.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\gvada\\projetos\\Store\\Store.Api\\Store.Api.csproj",
+        "projectUniqueName": "C:\\Users\\gvada\\projetos\\Store\\Store.Api\\Store.Api.csproj",
         "projectName": "Store.Api",
-        "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Api\\Store.Api.csproj",
+        "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Api\\Store.Api.csproj",
         "packagesPath": "C:\\Users\\gvada\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Api\\obj\\",
+        "outputPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gvada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,14 +27,14 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "c:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj": {
-                "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj"
+              "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj": {
+                "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj"
               },
-              "c:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj": {
-                "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj"
+              "C:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj": {
+                "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj"
               },
-              "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj": {
-                "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj"
+              "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj": {
+                "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj"
               }
             }
           }
@@ -63,6 +63,10 @@
             "Microsoft.AspNetCore.ResponseCompression": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -109,14 +113,14 @@
         }
       }
     },
-    "c:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj": {
+    "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj",
         "projectName": "Store.Domain",
-        "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj",
+        "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj",
         "packagesPath": "C:\\Users\\gvada\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Domain\\obj\\",
+        "outputPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gvada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -132,8 +136,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj": {
-                "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj"
+              "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj": {
+                "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj"
               }
             }
           }
@@ -172,14 +176,14 @@
         }
       }
     },
-    "c:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj": {
+    "C:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj",
         "projectName": "Store.Infra",
-        "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj",
+        "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Infra\\Store.Infra.csproj",
         "packagesPath": "C:\\Users\\gvada\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Infra\\obj\\",
+        "outputPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gvada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -195,11 +199,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "c:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj": {
-                "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj"
+              "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj": {
+                "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Domain\\Store.Domain.csproj"
               },
-              "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj": {
-                "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj"
+              "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj": {
+                "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj"
               }
             }
           }
@@ -242,14 +246,14 @@
         }
       }
     },
-    "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj": {
+    "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj",
         "projectName": "Store.Shared",
-        "projectPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj",
+        "projectPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\Store.Shared.csproj",
         "packagesPath": "C:\\Users\\gvada\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\gvada\\projetos\\Store\\Store.Shared\\obj\\",
+        "outputPath": "C:\\Users\\gvada\\projetos\\Store\\Store.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gvada\\AppData\\Roaming\\NuGet\\NuGet.Config",
